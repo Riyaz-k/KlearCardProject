@@ -41,7 +41,7 @@ public class BaseClass {
 	}
 	
 	//Scrolling down
-	public void scroll() throws InterruptedException {
+	public static void scroll() throws InterruptedException {
 	JavascriptExecutor javascript =(JavascriptExecutor) driver;
 	javascript.executeScript("window.scrollBy(0,600)");
 	Thread.sleep(1500);
@@ -84,7 +84,4 @@ public class BaseClass {
 		select = new Select(element);
 		select.selectByIndex(i);
 	}
-	
-	
-
 }

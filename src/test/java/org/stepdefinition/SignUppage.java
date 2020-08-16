@@ -17,19 +17,19 @@ public class SignUppage extends BaseClass{
 	SignUpPom signup;;
 	LoginPom login;
 	List<String> list;
-	
+
 	@Given("user has to launch {string} and {string}")
 	public void user_has_to_launch_and(String browser, String http, io.cucumber.datatable.DataTable dataTable) {
 		list = dataTable.asList();
 		launch(list.get(0));
 		waitTime(15);
-		URL(list.get(2));
+		URL(list.get(3));
 	}
 
 	@Given("user to click signUp button")
 	public void user_to_click_signUp_button() {
 		signup =  new SignUpPom();
-	  btnClick(signup.getSignUp());
+	  btnClick(signup.getSignUp()); 
 	}
 
 	@When("user has to fill Company Information")

@@ -5,6 +5,5 @@
   <classes>
   <class name="org.runner.TestRunnerClass"></class>
   </classes>
-  
   </test> <!-- Test -->
 </suite> <!-- Suite -->
